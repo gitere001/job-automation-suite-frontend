@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation } from
 import Layout from './Layout';
 import Dashboard from './pages/Dashboard';
 import LoginPage from './pages/LoginPage';
-import StaffsPage from './pages/StaffsPage';
+import Applications from './pages/Applications';
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import type { AppDispatch, RootState } from './app/store';
@@ -60,8 +60,8 @@ function LayoutRoutes() {
     <Layout>
       <Routes>
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/dashboard/inventory/stock" element={<Dashboard />} />
-        <Route path="/dashboard/staff" element={<StaffsPage />} />
+        <Route path="/dashboard/applications" element={<Applications />} />
+
         {/* Add other protected routes here */}
       </Routes>
     </Layout>
